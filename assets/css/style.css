@@ -225,6 +225,52 @@ main{
 }
 
 
+/**Mensajes de alerta**/
+
+.alerta {
+	--foreground-color: #222222;
+	--background-color: #eeeeee;
+
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	box-sizing: border-box;
+	border-radius: 5px;
+	width: 75%;
+	background-color: var(--background-color);
+    margin-top: 40px;
+    margin-left: 43px;
+}
+
+.icono-alerta {
+	display: flex;
+	align-items: center;
+}
+
+.texto-alerta {
+	margin-left: 30px;
+	font-size: 15px;
+	font-weight: 500;
+	font-family: 'Lexend', sans-serif;
+}
+
+.icono-alerta .material-symbols-outlined,
+.texto-alerta {
+	color: var(--foreground-color);
+}
+
+.exito-alerta {
+	--foreground-color: #ffffff;
+	--background-color: #46b63e;
+}
+
+.error-alerta {
+	--foreground-color: #ffffff;
+	--background-color: #e35d5f;
+}
+
+
+
 
 
 

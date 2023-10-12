@@ -10,7 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
 </head>
 <body>
 
@@ -19,16 +20,61 @@
             
                 
             <!--Formulario de recuperación de contraseña-->
+            
             <div class="contenedor__recover-user">
-                <!--Login-->
+                <style>
+                    .contenedor__recover-user form button{
+                        margin-left: 38px;
+                    }
+                </style>
+               
                 <form action="" class="formulario__recuperación">
                     <h2>Recuperar contraseña</h2>
                     <input type="text" placeholder="Nombre de usuario">
                     <button>Enviar e-mail de recuperación</button>
+
+
+                    {% if messages %}
+
+                    <div class="alerta error-alerta">
+                        <div class="icono-alerta">
+                            <span class="material-symbols-outlined">
+                                info
+                            </span>
+                        </div>
+                        <div class="texto-alerta">
+                            Usuario no encontrado
+                
+                        {% for message in messages %}
+                            <h5>{{ message }}</h5>
+                        {% endfor %}
+
+                        </div>
+                    </div>
+                    {% endif %}
+                    
+
+                    {% if messages %}
+
+                    <div class="alerta exito-alerta">
+                        <div class="icono-alerta">
+                            <span class="material-symbols-outlined">
+                                info
+                            </span>
+                        </div>
+                        <div class="texto-alerta">
+                            E-mail enviado con éxito
+                        
+                        {% for message in messages %}
+                            <h5>{{ message }}</h5>
+                        {% endfor %}
+
+                        </div>
+                    </div>
+                    {% endif %}
+
+                    
                 </form>
-                
-                
-            
         </div>
     </main>
 
