@@ -19,7 +19,7 @@
     <script>
         function validateEmail() {
           var x = document.getElementById("myEmail").value;
-          if (x == "" || x == null || !x.includes("@")) { //The email text input box must have text and a "@" symbol.
+          if (x == "" || x == null || !x.includes("@")) { // replace this condition with your validation logic
             document.getElementById("myEmail").className = "highlight";
           } else {
             document.getElementById("myEmail").className = "";
@@ -27,6 +27,19 @@
         }
     </script>
 
+    <script>
+        function validatePass() {
+        var pass1 = document.getElementById("myPass1").value;
+        var pass2 = document.getElementById("myPass2").value;
+        if (pass1 == "" || pass2 == "" || pass1 == null || pass2 == null || pass1 !== pass2) { // replace this condition with your validation logic
+            document.getElementById("myPass1").className = "highlight";
+            document.getElementById("myPass2").className = "highlight";
+        } else {
+            document.getElementById("myPass1").className = "";
+            document.getElementById("myPass2").className = "";
+        }
+        }
+    </script>
     
 </head>
 <body>
@@ -60,7 +73,8 @@
                     <h2>Registrarse</h2>
                     <input type="text" id="myEmail" placeholder="Correo Electronico" onblur="validateEmail()">
                     <input type="text" placeholder="Usuario">
-                    <input type="password" placeholder="Contraseña">
+                    <input type="password" id="myPass1" placeholder="Contraseña" onblur="validatePass()">
+                    <input type="password" id="myPass2" placeholder="Contraseña" onblur="validatePass()">
                     <button>Registrarse</button>
                 </form>
             </div>
