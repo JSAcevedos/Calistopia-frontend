@@ -19,7 +19,7 @@
     <script>
         function validateEmail() {
           var x = document.getElementById("myEmail").value;
-          if (x == "" || x == null || !x.includes("@")) { // replace this condition with your validation logic
+          if (x == "" || x == null || !x.includes("@")) { //The email text input box must have text and a "@" symbol.
             document.getElementById("myEmail").className = "highlight";
           } else {
             document.getElementById("myEmail").className = "";
