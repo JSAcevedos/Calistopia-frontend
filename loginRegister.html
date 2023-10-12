@@ -9,6 +9,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/stylesLoginRegister.css">
+
+    <style>
+        .highlight {
+          background-color: red;
+        }
+    </style>
+
+    <script>
+        function validateEmail() {
+          var x = document.getElementById("myEmail").value;
+          if (x == "" || x == null || !x.includes("@")) { // replace this condition with your validation logic
+            document.getElementById("myEmail").className = "highlight";
+          } else {
+            document.getElementById("myEmail").className = "";
+          }
+        }
+    </script>
+
+    
 </head>
 <body>
 
@@ -39,7 +58,7 @@
                 <!--Registro-->
                 <form action="" class="formulario__register">
                     <h2>Registrarse</h2>
-                    <input type="text" placeholder="Correo Electronico">
+                    <input type="text" id="myEmail" placeholder="Correo Electronico" onblur="validateEmail()">
                     <input type="text" placeholder="Usuario">
                     <input type="password" placeholder="Contraseña">
                     <button>Registrarse</button>
