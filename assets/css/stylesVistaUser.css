@@ -353,10 +353,10 @@ img {
 
 @media (max-width: 768px) {
     .boton-esquina {
-        font-size: 12px; /* Reduce el tamaño de la fuente */
-        padding: 3px 6px; /* Reduce el espaciado interno */
-        top: 15px; /* Ajusta la distancia desde la parte superior */
-        right: 9px; /* Ajusta la distancia desde la parte derecha */
+        font-size: 12px; 
+        padding: 3px 6px; 
+        top: 15px; 
+        right: 9px; 
     }
 }
 
@@ -379,10 +379,10 @@ img {
 
 @media (max-width: 768px) {
     .boton-esquina2 {
-        font-size: 12px; /* Reduce el tamaño de la fuente */
-        padding: 3px 6px; /* Reduce el espaciado interno */
-        top: 610px; /* Ajusta la distancia desde la parte superior */
-        right: 80px; /* Ajusta la distancia desde la parte derecha */
+        font-size: 12px; 
+        padding: 3px 6px; 
+        top: 610px; 
+        right: 80px; 
     }
 }
 
@@ -405,9 +405,9 @@ img {
 
 @media (max-width: 768px) {
     .boton-esquina3 {
-        font-size: 12px; /* Reduce el tamaño de la fuente */
-        padding: 3px 6px; /* Reduce el espaciado interno */
-        top: 610px; /* Ajusta la distancia desde la parte superior */
-        right: 200px; /* Ajusta la distancia desde la parte derecha */
+        font-size: 12px; 
+        padding: 3px 6px; 
+        top: 610px; 
+        right: 200px; 
     }
 }
