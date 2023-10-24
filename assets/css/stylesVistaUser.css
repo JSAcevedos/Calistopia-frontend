@@ -339,16 +339,16 @@ img {
     position: absolute;
     top: 35px; 
     right: 35px; 
-    padding: 5px 10px; 
-    background-color: #c22806;
-    color: #fff;
+    padding: 8px 8px; 
+    background-color: #b6a71c;
+    color: #000000;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .boton-esquina:hover {
-    background-color: #822506;
+    background-color: #7e7404;
 }
 
 @media (max-width: 768px) {
@@ -365,7 +365,7 @@ img {
     top: 520px; 
     right: 100px; 
     padding: 5px 10px; 
-    background-color: #09b603;
+    background-color: #069b01;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -391,7 +391,7 @@ img {
     top: 570px; 
     right: 100px; 
     padding: 5px 10px; 
-    background-color: #c22806;
+    background-color: #b52100;
     color: #fff;
     border: none;
     border-radius: 5px;
