@@ -81,7 +81,7 @@ main{
     color: var(--primario);
 }
 
-/**FORMULARIOS**/
+/**FORMsULARIOS**/
 .contenedor__login-register{
     display: flex;
     align-items: center;
