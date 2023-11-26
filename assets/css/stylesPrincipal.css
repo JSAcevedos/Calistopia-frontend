@@ -243,3 +243,97 @@ img {
     text-align: center;
     line-height: 1.2;
 }
+
+/**********************************************************************************************/
+/**Routine page styles**/
+/**********************************************************************************************/
+
+.routines{
+    background-color: #FFF;
+    margin: 5% 10rem;
+    padding: 2%;
+}
+
+.top_routine{
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 0px;
+    margin-bottom: 2rem;
+}
+
+.nombre_rutina{
+    margin: 0;
+    font-size: 2rem;
+    margin-right: 15rem;
+}
+
+.button_routines{
+    width: 10%;
+    height: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.boton_nombre{
+    background-color: #0A69BD;
+}
+.boton_agregar{
+    background-color: green;
+}
+.boton_eliminar{
+    background-color: red;
+}
+
+.ejercicio_rutina{
+    display: flex;
+    background-color: var(--secundario);
+    align-items: center;
+    justify-content: flex-start;
+    height: 30rem;
+}
+
+.numero_ejercicio{
+    margin-right: 3rem;
+}
+
+.ejercicio_layout{
+    margin-top: 0;
+    width: 30%;
+}
+
+.nombre_ejercicio_rutina{
+    font-size: 2rem;
+}
+
+.param_ejercicio{
+    width: 70%;
+    height: 80%;
+    margin-left: 3rem;
+}
+
+.campo{
+    display: flex;
+    margin-top: 2rem;
+    margin-right: 2rem;
+}
+
+.campo_nombre_series{
+    margin-right: 5.5rem;
+}
+
+.campo_nombre_descanso{
+    margin-right: 3.8rem;
+}
+
+.campo_ejercicio{
+    width: 20%;
+    height: 3rem;
+    border-radius: 6px;
+    border: 2px solid var(--negro);
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+/**********************************************************************************************/
+/**********************************************************************************************/
