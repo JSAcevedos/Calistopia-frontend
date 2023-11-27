@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil Usuario</title>
+    <title>PerfilUsuario</title>
     <link rel="stylesheet" href="./assets/css/stylesVistaUser.css">
     <link rel="stylesheet" href="./assets/css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 </head>
-
 <body>
     
     <header class="header">
@@ -37,7 +36,7 @@
         <nav class="menuLateral__navegacion">
             <a href="./paginaPrincipal.html" class="navegacion__enlace">Inicio</a>
             <a href="./nosotros.html" class="navegacion__enlace">Nosotros</a>
-            <!-- <a href="./contacto.html" class="navegacion__enlace">Contacto</a> -->
+            <a href="./contacto.html" class="navegacion__enlace">Contacto</a>
         </nav>
 
     </aside>
@@ -45,27 +44,57 @@
     <div class="perfil">
         <img class="imagen-de-perfil" src="./assets/images/perfil3.png" alt="Foto de perfil">
     </div>
+
+
+
     <div class="informacion-usuario">
+ 
+       
+        <div class="scroll-bg">
+            HISTORIAL DE CUENTA
+            <div class="scroll-div">
+                <div class="scroll">
+                    <ul>
+                    <!--{% if historial %}
+                        {% for texto in historial %}
+                            <li>{{ texto }}</li>
+                        {% endfor %}
+
+                    {% else %}
+                        <li>No hay historial disponible</li>
+                    {% endif %} -->
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
         <div class="cuadro-texto">
             <p>Nombre de Usuario</p>
         </div>
         <div class="cuadro-texto">
             <p>Correo Electrónico</p>
         </div>
+
     </div>
+
+
+
     <button class="boton">Cambiar Datos</button>
     <br>
+
     <div class="contenedor">
         <h3 class="centrado">Mis rutinas</h3>
         <a class="enlaceIngresar" href="loginRegister.html">
             <button class="boton-esquina">Cerrar sesión</button>
+
         </a>
         <button class="boton-esquina2">Añadir rutina</button>
         <button class="boton-esquina3">Eliminar rutina</button>
         <div class="grid">
             <div class="ejercicio">
                 <a href="ejercicio.html">
-                    <img class="ejercicio__imagen" src="./assets/images/ejercicio1.png" alt="imagen ejercicio">
+                    <img class="ejercicio__imagen" src="/assets/images/vacio3.jpg" alt="imagen ejercicio">
                     <div class="ejercicio__informacion">
                         <p class="ejercicio__nombre">RUTINA 1</p>
                         <p class="ejercicio__musculo">Descripción rutina</p>
@@ -74,7 +103,7 @@
             </div> 
             <div class="ejercicio">
                 <a href="ejercicio.html">
-                    <img class="ejercicio__imagen" src="./assets/images/ejercicio2.png" alt="imagen ejercicio">
+                    <img class="ejercicio__imagen" src="/assets/images/vacio3.jpg" alt="imagen ejercicio">
                     <div class="ejercicio__informacion">
                         <p class="ejercicio__nombre">RUTINA 2</p>
                         <p class="ejercicio__musculo">Descripción rutina</p>
@@ -83,7 +112,7 @@
             </div> 
             <div class="ejercicio">
                 <a href="ejercicio.html">
-                    <img class="ejercicio__imagen" src="./assets/images/ejercicio3.png" alt="imagen ejercicio">
+                    <img class="ejercicio__imagen" src="/assets/images/vacio3.jpg" alt="imagen ejercicio">
                     <div class="ejercicio__informacion">
                         <p class="ejercicio__nombre">RUTINA 3</p>
                         <p class="ejercicio__musculo">Descripción rutina</p>
